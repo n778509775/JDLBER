@@ -1,4 +1,6 @@
 # JDLBER
+Joint Deep Learning for Batch Effect Removal and Classification Based on Metabolomics
+
 Codes and data for using our method, a novel end-to-end deep learning framework for improving diagnostic accuracy by batch-effect calibration in metabolomics data.
 
 ##Abstract
