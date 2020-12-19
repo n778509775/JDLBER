@@ -1,9 +1,9 @@
 # JDLBER
-Joint Deep Learning for Batch Effect Removal and Classification Based on Metabolomics
+<font size=8>**Joint Deep Learning for Batch Effect Removal and Classification Based on Metabolomics**</font>
 
 Codes and data for using our method, a novel end-to-end deep learning framework for improving diagnostic accuracy by batch-effect calibration in metabolomics data.
 
-##Abstract
+<font size=8>**Abstract**</font><br />
 Metabolomics occupies an important position in both clinical diagnosis performance and basic researches for metabolic signatures and biomarkers. These technologies used in biology depend on a complicated set of reagents and hardware. However, batch effects may occur if two technicians are responsible for different subsets of the experiments or if two different lots of reagents, chips or instruments are used. If not properly dealt with, batch effects can have a particularly strong and pervasive impact, which subsequently leads to serious concerns about the validity of the biological conclusions.
 To fully improve the accuracy of diagnosis for distinguishing between patients and healthy people better, it is necessary to remove the bias caused by the experimental environment. We present a novel end-to-end deep learning framework, which consists of three networks, namely calibrator network, reconstructor(s) and discriminator. The goal is to minimize the distance between the multivariate distributions of two replicates while guaranteeing biological information still exists and higher diagnosis accuracy. We demonstrate that our algorithm outperforms existing methods for removing batch effects in public CyTOF and private MALDI MS datasets.
 
