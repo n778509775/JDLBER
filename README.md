@@ -34,15 +34,14 @@ Sklearn 0.21.3<br />
 R 3.6.3<br />
 
 ## Files
-*computeAcc.py*: An example of training label known dataset and computing accuracy on label unknown dataset going through batch effect removal
-*classify.py*: An example of training label known dataset and computing accuracy on label unknown dataset without any treatment
-*crossValidation.py*: 10 fold cross validation in “Subject” level and “Sample” level to request the upper bound of prediction
-*network.py*: Class definitions for three network architectures (Calibrator, Reconstructors, Discriminator) and loss function
-*pre_processing.py*: Data preprocessing
-*mmd.py*: Definition of maximum mean discrepancy (MMD)
-*auxiliary.py*: Some functions that implement visualization
-*alignment.py*: Peak alignment to ensure consistent number of
-features
+*computeAcc.py*: An example of training label known dataset and computing accuracy on label unknown dataset going through batch effect removal<br />
+*classify.py*: An example of training label known dataset and computing accuracy on label unknown dataset without any treatment<br />
+*crossValidation.py*: 10 fold cross validation in “Subject” level and “Sample” level to request the upper bound of prediction<br />
+*network.py*: Class definitions for three network architectures (Calibrator, Reconstructors, Discriminator) and loss function<br />
+*pre_processing.py*: Data preprocessing<br />
+*mmd.py*: Definition of maximum mean discrepancy (MMD)<br />
+*auxiliary.py*: Some functions that implement visualization<br />
+*alignment.py*: Peak alignment to ensure consistent number of features<br />
 
 ## Run our codes
 1. To carry out peak alignment, run the script below:
