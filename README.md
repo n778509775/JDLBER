@@ -15,17 +15,17 @@ Private MALDI MS: Another set of experiments were carried out based on the laser
 ## Method
 We propose a joint deep learning framework to calibrate batch effect first and then conduct sample classification (e.g., to derive disease diagnosis). Our framework consists of three major branches: (1) a calibrator to minimize the dissimilarity between different batches; (2) reconstructor(s) to guarantee that the sample data can be fully recovered after calibrating batch effect, which assures the fidelity of data processing in our framework; and (3) a discriminator to predict the labels of samples given their calibrated data. Given individual input batches of metabolomics data, we pass them through the calibrator such that they are aligned in the latent feature space. A subsequent discriminator derives from the latent space, supervised by the known disease labels of certain batch(es) in training, and predicting diagnosis labels for the other test batch(es). The reconstructor(s), which also derives from the latent feature space, ensures all batches to be fully recovered. The loss function we optimized contains three components: the reconstruction loss between the input and output of the encoder-decoder backbone, the MMD-based loss between the codes of two batches, and classification loss between predictions and true labels. Our framework is shown in figure below.
 
-！[](illustration/network.png)
+![](illustration/network.png)
 
 ## Results
 We apply the proposed method to two applications of CyTOF and MALDI MS, respectively, and demonstrate superior performance in achieving not only good batch effect removal but also satisfactory classification capability. 
 Results for public CyTOF: 
 
-！[](illustration/CyTOF.jpg)
+![](illustration/CyTOF.jpg)
 
 Results for private MALDI MS:
 
-！[](illustration/MALDI-MS.jpg)
+![](illustration/MALDI-MS.jpg)
 
 ## Dependencies
 Python 3.6.8
