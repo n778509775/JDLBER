@@ -28,10 +28,10 @@ Results for private MALDI MS:
 ![](illustration/MALDI-MS.jpg)
 
 ## Dependencies
-Python 3.6.8
-PyTorch 1.3.1
-Sklearn 0.21.3
-R 3.6.3
+Python 3.6.8<br />
+PyTorch 1.3.1<br />
+Sklearn 0.21.3<br />
+R 3.6.3<br />
 
 ## Files
 *computeAcc.py*: An example of training label known dataset and computing accuracy on label unknown dataset going through batch effect removal
