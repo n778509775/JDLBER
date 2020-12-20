@@ -47,11 +47,11 @@ R 3.6.3<br />
 1. To carry out peak alignment, run the script below:
  	python alignment.py --data_path your_data_path --target target_file --source source_file
 2. To conduct 10 fold cross validation at both levels:
-    python  crossValidation.py --data_folder your_data_path –train_file   data_file –sample_count sample_count_file 
+    python  crossValidation.py --data_folder your_data_path –train_file   data_file  
 3. View diagnosis results before batch effect calibration:
-   python classify.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) –sample_count sample_count_file
+   python classify.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) 
 4. View diagnosis results after batch effect calibration:
- python computeAcc.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) –sample_count sample_count_file
+ python computeAcc.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) 
 
 ## Citation
 If you find this work useful for your research, please consider citing:
