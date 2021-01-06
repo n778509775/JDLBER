@@ -61,22 +61,6 @@ class Decoder_b(nn.Module):
         x = self.decoder(x)
         return x
 
-# Decoder_c
-class Decoder_c(nn.Module):
-    def __init__(self, num_inputs):
-        super(Decoder_c, self).__init__()
-        self.decoder = nn.Sequential(
-            nn.Linear(num_inputs, num_inputs),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.Linear(num_inputs, num_inputs),
-            nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(num_inputs, num_inputs))
-        self.decoder.apply(init_weights)
-    def forward(self, x):
-        x = self.decoder(x)
-        return x
-
 #classifier combine with autoencoder
 class Discriminator(nn.Module):
     def __init__(self, num_inputs):
