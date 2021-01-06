@@ -49,9 +49,9 @@ R 3.6.3<br />
 2. To conduct 10 fold cross validation at both levels:
     python  crossValidation.py --data_folder your_data_path –train_file   data_file  
 3. View diagnosis results before batch effect calibration:
-   python classify.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) 
+   python classify.py --data_folder your_data_path --train_file file1 --test_file file2 
 4. View diagnosis results after batch effect calibration:
- python computeAcc.py --data_folder your_data_path --dataset_file_list file1 file2 (file3) 
+ python computeAcc.py --data_folder your_data_path --train_file file1 --test_file file2 
 
 ## Citation
 If you find this work useful for your research, please consider citing:
