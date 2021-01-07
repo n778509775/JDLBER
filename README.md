@@ -21,11 +21,11 @@ We propose a joint deep learning framework to calibrate batch effect first and t
 We apply the proposed method to two applications of CyTOF and MALDI MS, respectively, and demonstrate superior performance in achieving not only good batch effect removal but also satisfactory classification capability. 
 Results for public CyTOF: 
 
-![](illustration/CyTOF.jpg)
+![](illustration/CyTOF.png)
 
 Results for private MALDI MS:
 
-![](illustration/MALDI-MS.jpg)
+![](illustration/MALDI-MS.png)
 
 ## Dependencies
 Python 3.6.8<br />
