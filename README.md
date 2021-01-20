@@ -34,13 +34,11 @@ Sklearn 0.21.3<br />
 R 3.6.3<br />
 
 ## Files
-*computeAcc.py*: An example of training label known dataset and computing accuracy on label unknown dataset going through batch effect removal<br />
-*classify.py*: An example of training label known dataset and computing accuracy on label unknown dataset without any treatment<br />
-*crossValidation.py*: 10 fold cross validation in “Subject” level and “Sample” level to request the upper bound of prediction<br />
+*after_calib.py*: An example of training label known dataset and computing four matrics on label unknown dataset after batch effect removal<br />
+*before_calib.py*: An example of training label known dataset and computing four matrics on label unknown dataset before calibration<br />
+*crossValidation.py*: 10 fold cross validation in “Subject” level and “Sample” level to request the upper bound of cross-batch prediction<br />
 *network.py*: Class definitions for three network architectures (Calibrator, Reconstructors, Discriminator) and loss function<br />
-*pre_processing.py*: Data preprocessing<br />
-*mmd.py*: Definition of maximum mean discrepancy (MMD)<br />
-*auxiliary.py*: Some functions that implement visualization<br />
+*function.py*: Data preprocessing, Definition of MMD and some functions that implement visualization<br />
 *alignment.py*: Peak alignment to ensure consistent number of features<br />
 
 ## Run our codes
@@ -49,9 +47,9 @@ R 3.6.3<br />
 2. To conduct 10 fold cross validation at both levels:
     python  crossValidation.py --data_folder your_data_path –train_file   data_file  
 3. View diagnosis results before batch effect calibration:
-   python classify.py --data_folder your_data_path --train_file file1 --test_file file2 
+   python before_calib.py --data_folder your_data_path --train_file file1 --test_file file2 
 4. View diagnosis results after batch effect calibration:
- python computeAcc.py --data_folder your_data_path --train_file file1 --test_file file2 
+ python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 
 
 ## Citation
 If you find this work useful for your research, please consider citing:
