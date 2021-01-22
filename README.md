@@ -42,12 +42,12 @@ R 3.6.3<br />
 *alignment.py*: Peak alignment to ensure consistent number of features<br />
 
 ## Run our codes
-1. Clone this git repository
-   git clone https://github.com/n778509775/JDLBER.git
-   and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should install all packages required by the program as follows：
-   sudo pip3 install package_name
-   If only available for this user, please follow:
-   pip3 install package_name --user
+1. Clone this git repository<br />
+   git clone https://github.com/n778509775/JDLBER.git<br />
+   and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should install all packages required by the program as follows：<br />
+   sudo pip3 install package_name<br />
+   If only available for this user, please follow:<br />
+   pip3 install package_name --user<br />
 2. 
 1. To carry out peak alignment, run the script below:
  	python alignment.py --data_path your_data_path --target target_file --source source_file
