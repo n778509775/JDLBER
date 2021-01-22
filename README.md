@@ -48,7 +48,9 @@ R 3.6.3<br />
    sudo pip3 install package_name<br />
    If only available for this user, please follow:<br />
    pip3 install package_name --user<br />
-2. 
+2. The dataset is organized in the data folder:<br />
+   "1.csv", "2.csv", "3.csv" are representing three batches of the MALDI MS data, and "sample-num-1", "sample-num-2", "sample-num-3" store the number of samples corresponding to    each subject in the corresponding file.<br />
+   "", "", "", "", are coming from public CyTOF data. 
 1. To carry out peak alignment, run the script below:
  	python alignment.py --data_path your_data_path --target target_file --source source_file
 2. To conduct 10 fold cross validation at both levels:
