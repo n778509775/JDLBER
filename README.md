@@ -54,9 +54,9 @@ R 3.6.3<br />
 3. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted feature matching,      that is, the number of features of the same data type is equal.<br />
    If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br />
  	python alignment.py --data_path your_data_path --target target_file --source source_file<br />
-2. To conduct 10 fold cross validation at both levels:
+4. In order to obtain the upper bound of cross-validation, we could conduct 10 fold in-batch cross validation at both sample and subject levels:<br />
     python crossValidation.py --data_folder your_data_path --train_file data_file  <br />
-    example：
+    example：python crossValidation.py --train_file Person1Day1_baseline.csv --num_epochs 20 <br />
 3. View diagnosis results before batch effect calibration:
    python before_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
    example：
