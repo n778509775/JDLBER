@@ -57,12 +57,12 @@ R 3.6.3<br />
 4. In order to obtain the upper bound of cross-validation, we could conduct 10 fold in-batch cross validation at both sample and subject levels:<br />
     python crossValidation.py --data_folder your_data_path --train_file data_file  <br />
     example：python crossValidation.py --train_file Person1Day1_baseline.csv --num_epochs 20 <br />
-3. View diagnosis results before batch effect calibration:
+5. If you consider viewing classification results before batch effect calibration, you could run:<br />
    python before_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
-   example：
-4. View diagnosis results after batch effect calibration:
- python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
- example：
+   example：python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5
+6. If you consider viewing classification results after batch effect calibration, you could run:<br />
+   python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
+   example：python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01
 
 ## Citation
 If you find this work useful for your research, please consider citing our article.
