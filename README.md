@@ -42,6 +42,7 @@ R 3.6.3<br />
 *alignment.py*: Peak alignment to ensure consistent number of features<br />
 
 ## Run our codes
+NOTE: All the codes are runing in JDLBER directory, and the data should be placed in the data folder. The loss curve can be viewed in the plots folder.<br />
 1. Clone this git repository<br />
    git clone https://github.com/n778509775/JDLBER.git<br />
    and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should install all packages required by the program as follows：<br />
@@ -63,6 +64,6 @@ R 3.6.3<br />
 6. If you consider viewing classification results after batch effect calibration, you could run:<br />
    python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
    example：python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01<br />
-NOTE: All the codes are runing in JDLBER directory, and the data should be placed in the data folder. The loss curve can be viewed in the plots folder.<br />
+
 ## Citation
 If you find this work useful for your research, please consider citing our article.
