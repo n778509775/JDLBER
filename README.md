@@ -62,7 +62,7 @@ R 3.6.3<br />
    example：python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5
 6. If you consider viewing classification results after batch effect calibration, you could run:<br />
    python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />
-   example：python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01
-
+   example：python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01<br />
+NOTE: All the codes are runing in JDLBER directory, and the data should be placed in the data folder. The loss curve can be viewed in the plots folder.<br />
 ## Citation
 If you find this work useful for your research, please consider citing our article.
