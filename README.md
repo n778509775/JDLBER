@@ -54,8 +54,7 @@ The dataset is organized in the data folder:<br />
    and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should **install all packages** required by the program as follows：   <br />   
    `sudo pip3 install package_name`<br />   
    If only available for this user, please follow:<br />   
-   `pip3 install package_name --user`
-   <br /> 
+   `pip3 install package_name --user`  <br />    
 2. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted **feature matching**, that is, the number of features of the same data type is equal.<br />
    If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br /> 
    <br />
@@ -69,8 +68,7 @@ The dataset is organized in the data folder:<br />
 4. If you consider viewing classification results **before batch effect calibration**, you could run:   <br />    
    `python before_calib.py --data_folder your_data_path --train_file file1 --test_file file2` <br />    
    example：<br />   
-   `python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5` 
-    <br />
+   `python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5`     <br />   
 5. If you consider viewing classification results **after batch effect calibration**, you could run:   <br />      
    `python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2` <br />   
    example：<br />   
