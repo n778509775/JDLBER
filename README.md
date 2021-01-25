@@ -48,21 +48,21 @@ Results for private MALDI MS:
    >sudo pip3 install package_name<br />   
    If only available for this user, please follow:<br />
    >>pip3 install package_name --user<br />
-2. The dataset is organized in the data folder:<br />
-   "1.csv", "2.csv", "3.csv" are representing three batches of the MALDI MS data, and "sample-num-1", "sample-num-2", "sample-num-3" store the number of samples corresponding to    each subject in the corresponding file.<br />
+2. The dataset is organized in the data folder:   <br />   
+   "1.csv", "2.csv", "3.csv" are representing three batches of the MALDI MS data, and "sample-num-1", "sample-num-2", "sample-num-3" store the number of samples corresponding to each subject in the corresponding file.<br />
    "Person1Day1_baseline.csv", "Person1Day2_baseline.csv", "Person2Day1_baseline.csv", "Person2Day2_baseline.csv" are coming from public CyTOF data. "Day 1" and "Day 2" herald different batches.<br />
 3. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted feature matching, that is, the number of features of the same data type is equal.<br />
-   If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br />
+   If the number of features you are processing is not equal, please carry out peak alignment and run the script below:   <br />   
  	>python alignment.py --data_path your_data_path --target target_file --source source_file<br />
-4. In order to obtain the upper bound of cross-validation, we could conduct 10 fold in-batch cross validation at both sample and subject levels:<br />   
+4. In order to obtain the upper bound of cross-validation, we could conduct 10 fold in-batch cross validation at both sample and subject levels:   <br />      
     >python crossValidation.py --data_folder your_data_path --train_file data_file  <br />   
     example：
     >>python crossValidation.py --train_file Person1Day1_baseline.csv --num_epochs 20 <br />
-5. If you consider viewing classification results before batch effect calibration, you could run:<br />   
+5. If you consider viewing classification results before batch effect calibration, you could run:   <br />      
    >python before_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />   
    example：
    >>python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5
-6. If you consider viewing classification results after batch effect calibration, you could run:<br />   
+6. If you consider viewing classification results after batch effect calibration, you could run:   <br />      
    >python after_calib.py --data_folder your_data_path --train_file file1 --test_file file2 <br />   
    example：
    >>python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01<br />
