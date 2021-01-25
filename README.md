@@ -56,7 +56,7 @@ The dataset is organized in the data folder:<br />
    If only available for this user, please follow:<br />   
    `pip3 install package_name --user`  <br /> 
    <br />
-2. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted **feature matching**, that is, the number of features of the same data type is equal.<br />
+2. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted **feature matching**, that is, the number of features of the same data type is equal.<br />   
    If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br /> 
    <br />
    `python alignment.py --data_path your_data_path --target target_file --source source_file`<br /> 
