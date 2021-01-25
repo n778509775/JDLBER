@@ -50,7 +50,7 @@ The dataset is organized in the data folder:<br />
 
 ## Run our codes
 1. Clone this git repository<br />   
-   ```<br />git clone https://github.com/n778509775/JDLBER.git<br />```   
+   `git clone https://github.com/n778509775/JDLBER.git`  <br />    
    and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should **install all packages** required by the program as follows：   <br />   
    `sudo pip3 install package_name`<br />   
    If only available for this user, please follow:<br />   
