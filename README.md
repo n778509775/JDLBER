@@ -52,9 +52,9 @@ The dataset is organized in the data folder:<br />
 1. Clone this git repository<br />   
    `git clone https://github.com/n778509775/JDLBER.git`  <br />    
    and install all the requirements listed above. Our operating environment is Ubuntu 16.04. You should **install all packages** required by the program as follows：   <br />   
-   `sudo pip3 install package_name`<br />   
+   `sudo pip3 install -r requirement.txt`<br />   
    If only available for this user, please follow:<br />   
-   `pip3 install package_name --user`  <br /> 
+   `pip3 install -r requirement.txt --user`  <br /> 
    <br />
 2. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted **feature matching**, that is, the number of features of the same data type is equal.<br />   
    If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br /> 
