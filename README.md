@@ -64,17 +64,17 @@ The dataset is organized in the data folder:<br />
 3. In order to obtain the upper bound of **cross-validation**, we could conduct 10 fold in-batch cross validation at both sample and subject levels:   <br />    
     `python crossValidation.py --data_folder your_data_path --train_file file_name`  <br />    
     example：<br />   
-    `python crossValidation.py --train_file Person1Day1_baseline.csv --num_epochs 20` <br />
+    `python crossValidation.py --train_file Person1Day1_baseline.csv --MALDI_MS False --num_epochs 15` <br />
     <br />
 4. If you consider viewing classification results **before batch effect calibration**, you could run:   <br />    
    `python before_calib.py --data_folder your_data_path --train_file file_name_1 --test_file file_name_2` <br />    
    example：<br />   
-   `python before_calib.py --train_file 1.csv --test_file 2.csv --base_lr 1e-5` <br />
+   `python before_calib.py --train_file 1.csv --test_file 2.csv --MALDI_MS True --base_lr 1e-3` <br />
    <br />
 5. If you consider viewing classification results **after batch effect calibration**, you could run:   <br />      
    `python after_calib.py --data_folder your_data_path --train_file file_name_1 --test_file file_name_2` <br />   
    example：<br />   
-   `python after_calib.py --train_file 3.csv --test_file 2.csv --alpha 0.01 --beta 1 --gamma 0.01`<br />     
+   `python after_calib.py --train_file 3.csv --test_file 2.csv --MALDI_MS True --batch_size 200`<br />     
    
 **NOTE:** All the codes are runing in JDLBER directory, and the data should be placed in the data folder. The loss curve can be viewed in the plots folder.<br />
 
