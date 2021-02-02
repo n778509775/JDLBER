@@ -69,7 +69,7 @@ The dataset is organized in the data folder:<br />
 4. If you consider viewing classification results **before batch effect calibration**, you could run:   <br />    
    `python before_calib.py --data_folder your_data_path --train_file file_name_1 --test_file file_name_2` <br />    
    example：<br />   
-   `python before_calib.py --MALDI_MS --train_file 1.csv --test_file 2.csv --base_lr 1e-3` <br />
+   `python before_calib.py --MALDI_MS --train_file 3.csv --test_file 2.csv --base_lr 1e-3` <br />
    <br />
 5. If you consider viewing classification results **after batch effect calibration**, you could run:   <br />      
    `python after_calib.py --data_folder your_data_path --train_file file_name_1 --test_file file_name_2` <br />   
