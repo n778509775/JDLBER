@@ -59,7 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr_step', type=int, default=10000, help='step decay of learning rates, 10000 for both')
     parser.add_argument('--base_lr', type=float, default=1e-4, help='learning rate for network, 1e-4 for both')
     parser.add_argument('--l2_decay', type=float, default=5e-5, help='preventing overfitting, 5e-5 for both')
-    parser.add_argument('--log_interval', type=int, default=1000)
+    parser.add_argument('--log_interval', type=int, default=100)
     parser.add_argument('--alpha', type=bool, default=0.01, help='coefficient of reconstruction loss, 0.01 for both')
     parser.add_argument('--beta', type=bool, default=1, help='coefficient of calibration loss, 1 for both')
     parser.add_argument('--gamma', type=bool, default=0.01, help='coefficient of classification loss, 0.01 for both')
