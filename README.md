@@ -57,7 +57,8 @@ The dataset is organized in the data folder:<br />
    `pip3 install -r requirement.txt --user`  <br /> 
     <br />
    For individual packages like ‘tkinter’ that cannot be successfully installed by ‘pip’, please try:<br />    
-   `sudo apt-get install python3-tk`  <br />      
+   `sudo apt-get install python3-tk`  <br /> 
+    <br />
 2. Fortunately, although our original collected sample data are not public, the preprocessed version is shared in the data folder. This version has conducted **feature matching**, that is, the number of features of the same data type is equal.<br />   
    If the number of features you are processing is not equal, please carry out peak alignment and run the script below:<br /> 
    <br />
