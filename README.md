@@ -82,4 +82,5 @@ The dataset is organized in the data folder:<br />
 **NOTE:** All the codes are runing in JDLBER directory, and the data should be placed in the data folder. The loss curve can be viewed in the plots folder.<br />
 
 ## Citation
-If you find this work useful for your research, please consider citing our article.
+If you find this work useful for your research, please consider citing our article.<br />
+Niu, J., Yang, J., Guo, Y., Qian, K., Wang, Q. Joint deep learning for batch effect removal and classification toward MALDI MS based metabolomics. BMC Bioinformatics. 23, 270 (2022). https://doi.org/10.1186/s12859-022-04758-z.
